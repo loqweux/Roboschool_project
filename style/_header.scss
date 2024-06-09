@@ -1,0 +1,111 @@
+@import "_variables";
+header {
+  background-color: $bg_head;
+  font-family: $font;
+  nav {
+    margin-bottom: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 100px 0px 100px;
+    @media (max-width: 480px) {
+      padding: 30px 50px 0px 50px;
+      justify-content: center;
+    }
+    @media (max-width: 380px) {
+      padding: 30px 25px 0px 25px;
+      justify-content: center;
+    }
+    .wrapper-nav {
+      @media (max-width: 1050px) {
+        display: none;
+      }
+    }
+    .burger_menu {
+      display: none;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      @media (max-width: 1050px) {
+        display: block;
+        padding-left: 10px;
+      }
+    }
+    p {
+      color: white;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 160%;
+    }
+    :first-child {
+      margin-left: 0px;
+    }
+    a {
+      color: white;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 160%;
+      text-decoration: none;
+      margin-left: 40px;
+    }
+  }
+  .header-wrapper-info {
+    max-width: 1330px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: 1305px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+    img {
+      width: 783px;
+      height: 917px;
+      @media (max-width: 900px) {
+        width: 500px;
+        height: 634px;
+      }
+      @media (max-width: 530px) {
+        width: 400px;
+        height: 534px;
+      }
+      @media (max-width: 430px) {
+        width: 330px;
+        height: 434px;
+      }
+    }
+    .header-info {
+      padding-top: 181px;
+      h1 {
+        color: white;
+        font-size: 70px;
+        font-weight: 600;
+        line-height: 160%;
+        margin-bottom: 20px;
+        @media (max-width: 430px) {
+          font-size: 35px;
+        }
+      }
+      p {
+        max-width: 478px;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 160%;
+        margin-bottom: 50px;
+      }
+      button {
+        padding: 25px 54px 25px 54px;
+        border-radius: 5px;
+        background: rgb(213, 32, 39);
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 160%;
+        border: none;
+      }
+    }
+  }
+}

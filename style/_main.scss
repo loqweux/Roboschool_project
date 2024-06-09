@@ -1,0 +1,285 @@
+@import "_variables";
+main {
+  font-family: $font;
+  .main-info {
+    padding-top: 120px;
+    margin: 0 auto;
+    max-width: 1160px;
+    .main-text-wrapper {
+      color: $textcolor;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 160%;
+      margin-bottom: 76px;
+      @media (max-width: 1180px) {
+        padding-left: 10px;
+      }
+      @media (max-width: 550px) {
+        font-size: 25px;
+      }
+      p {
+        max-width: 891px;
+      }
+      span {
+        font-weight: 600;
+      }
+    }
+    .main-wrapper-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 120px;
+      @media (max-width: 1040px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .info1,
+      .info2,
+      .info3,
+      .info4 {
+        margin: 10px;
+        h2 {
+          color: rgb(213, 32, 39);
+          font-size: 70px;
+          font-weight: 600;
+          line-height: 160%;
+        }
+        p {
+          max-width: 260px;
+          color: rgba(20, 16, 36, 0.7);
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 160%;
+        }
+      }
+    }
+  }
+  .main-give {
+    background: rgb(249, 249, 249);
+    padding: 100px 0 100px 0;
+    .main-container {
+      max-width: 1231px;
+      margin: 0 auto;
+      .main-text-curs {
+        margin-bottom: 60px;
+        color: $textcolor;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 160%;
+        @media (max-width: 839px) {
+          font-size: 40px;
+          padding-left: 10px;
+        }
+        @media (max-width: 674px) {
+          font-size: 30px;
+        }
+        @media (max-width: 520px) {
+          font-size: 20px;
+        }
+      }
+      .give1,
+      .give2,
+      .give3 {
+        @media (max-width: 744px) {
+          margin-bottom: 30px;
+        }
+      }
+      .main-wrapper-given {
+        display: flex;
+        @media (max-width: 1095px) {
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          padding-left: 10px;
+        }
+        @media (max-width: 745px) {
+          justify-content: center;
+        }
+        justify-content: space-between;
+        h4 {
+          color: $textcolor;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 160%;
+        }
+        p {
+          color: rgba(20, 16, 36, 0.7);
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 160%;
+          max-width: 360px;
+        }
+      }
+    }
+  }
+  .grid-proffi {
+    h5 {
+      text-align: center;
+      padding: 120px 0px 60px 0px;
+      color: $textcolor;
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 160%;
+      @media (max-width: 485px) {
+        font-size: 40px;
+      }
+      @media (max-width: 395px) {
+        font-size: 30px;
+      }
+    }
+    .grid-wrapper {
+      margin-bottom: 220px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media (max-width: 1700px) {
+        justify-content: center;
+        .grid2,
+        .grid3,
+        .grid4 {
+          margin-left: 20px;
+        }
+        .grid1,
+        .grid2,
+        .grid3,
+        .grid4 {
+          margin-bottom: 20px;
+        }
+      }
+      @media (max-width: 394px) {
+        .grid1,
+        .grid2,
+        .grid3,
+        .grid4,
+        .grid5 {
+          transform: scale(0.9);
+        }
+      }
+      h6 {
+        padding-top: 20px;
+        color: $textcolor;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 160%;
+      }
+      p {
+        color: rgba(20, 16, 36, 0.7);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 160%;
+        margin-bottom: 20px;
+      }
+      a {
+        color: rgb(213, 32, 39);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 160%;
+        text-decoration: none;
+      }
+    }
+  }
+  .main-packet {
+    max-width: 1160px;
+    margin: 0 auto;
+    h1 {
+      padding-left: 10px;
+      color: $textcolor;
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 160%;
+    }
+    .packet-grid {
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      grid-template-rows: repeat(1, 640px);
+      place-items: center;
+      h2 {
+        padding-top: 40px;
+        color: $textcolor;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 160%;
+        margin-bottom: 63px;
+      }
+      h3 {
+        color: $textcolor;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 160%;
+        margin-bottom: 20px;
+      }
+      p {
+        color: $textcolor;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 160%;
+        margin-bottom: 61px;
+      }
+      button {
+        padding: 25px 54px 25px 54px;
+        border-radius: 5px;
+        background: rgb(213, 32, 39);
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 160%;
+        border: none;
+      }
+      .p-grid1 {
+        width: 360px;
+        height: 500px;
+        border-radius: 20px;
+        background: $textcolor;
+        @media (max-width: 374px) {
+          transform: scale(0.9);
+        }
+        h2 {
+          padding-top: 40px;
+          color: white;
+          font-size: 30px;
+          font-weight: 600;
+          line-height: 160%;
+          margin-bottom: 83px;
+        }
+        h3 {
+          color: white;
+          font-size: 50px;
+          font-weight: 600;
+          line-height: 160%;
+          margin-bottom: 20px;
+        }
+        p {
+          color: white;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 160%;
+          margin-bottom: 52px;
+        }
+      }
+      .p-grid2 {
+        width: 360px;
+        height: 460px;
+        border: 1px solid rgba(20, 16, 36, 0.2);
+        border-radius: 20px;
+        @media (max-width: 734px) {
+          margin-bottom: 60px;
+        }
+        @media (max-width: 374px) {
+          transform: scale(0.9);
+        }
+      }
+      .p-grid3 {
+        width: 360px;
+        height: 460px;
+        border: 1px solid rgba(20, 16, 36, 0.2);
+        border-radius: 20px;
+        @media (max-width: 1094px) {
+          margin-bottom: 60px;
+        }
+        @media (max-width: 374px) {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+}

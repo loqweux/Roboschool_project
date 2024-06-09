@@ -1,0 +1,95 @@
+@import "_variables";
+footer {
+  font-family: $font;
+  .footer-background {
+    background: $bg_footer;
+    .footer-info {
+      padding: 87px 0px 87px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      @media (max-width: 990px) {
+        justify-content: center;
+      }
+      max-width: 1042px;
+      margin: 0 auto;
+      .footer-form {
+        display: flex;
+        flex-direction: column;
+        input {
+          border: none;
+          padding: 20px 0px 20px 20px;
+          width: 500px;
+          @media (max-width: 515px) {
+            width: 300px;
+          }
+          border-radius: 5px;
+          background: rgb(246, 246, 246);
+          margin-bottom: 10px;
+        }
+        button {
+          border-radius: 5px;
+          padding: 20px 0px 20px 0px;
+          background: $textcolor;
+          color: white;
+          border: none;
+        }
+      }
+      .footer-write {
+        padding-top: 19px;
+        @media (max-width: 990px) {
+          margin-bottom: 20px;
+        }
+        @media (max-width: 515px) {
+          text-align: center;
+        }
+        h4 {
+          color: white;
+          font-size: 36px;
+          font-weight: 600;
+          line-height: 130%;
+          max-width: 476px;
+          @media (max-width: 515px) {
+            font-size: 30px;
+          }
+        }
+        p {
+          color: white;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 130%;
+          @media (max-width: 515px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .footer-nav {
+    background: $textcolor;
+    padding: 40px 100px 40px 100px;
+    @media (max-width: 649px) {
+      padding: 40px 50px 40px 50px;
+    }
+    .footer-wrapper-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @media (max-width: 549px) {
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+      h5 {
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 160%;
+      }
+    }
+    p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 160%;
+    }
+  }
+}
