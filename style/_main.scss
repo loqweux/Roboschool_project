@@ -2,9 +2,9 @@
 main {
   font-family: $font;
   .main-info {
-    padding-top: 120px;
     margin: 0 auto;
     max-width: 1160px;
+    margin-bottom: 120px;
     .main-text-wrapper {
       color: $textcolor;
       font-size: 30px;
@@ -28,7 +28,6 @@ main {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      margin-bottom: 120px;
       @media (max-width: 1040px) {
         flex-wrap: wrap;
         justify-content: center;
@@ -56,7 +55,11 @@ main {
   }
   .main-give {
     background: rgb(249, 249, 249);
-    padding: 100px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 485px;
+    margin-bottom: 120px;
     .main-container {
       max-width: 1231px;
       margin: 0 auto;
@@ -66,6 +69,9 @@ main {
         font-size: 50px;
         font-weight: 600;
         line-height: 160%;
+        @media (max-width: 745px) {
+          text-align: center;
+        }
         @media (max-width: 839px) {
           font-size: 40px;
           padding-left: 10px;
@@ -114,7 +120,7 @@ main {
   .grid-proffi {
     h5 {
       text-align: center;
-      padding: 120px 0px 60px 0px;
+      margin-bottom: 60px;
       color: $textcolor;
       font-size: 50px;
       font-weight: 600;
@@ -154,8 +160,10 @@ main {
           transform: scale(0.9);
         }
       }
+      img {
+        margin-bottom: 20px;
+      }
       h6 {
-        padding-top: 20px;
         color: $textcolor;
         font-size: 24px;
         font-weight: 600;

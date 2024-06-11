@@ -2,6 +2,7 @@
 header {
   background-color: #141024;
   font-family: "Jost", sans-serif;
+  margin-bottom: 120px;
 }
 header nav {
   margin-bottom: 85px;
@@ -130,9 +131,9 @@ main {
   font-family: "Jost", sans-serif;
 }
 main .main-info {
-  padding-top: 120px;
   margin: 0 auto;
   max-width: 1160px;
+  margin-bottom: 120px;
 }
 main .main-info .main-text-wrapper {
   color: rgb(20, 16, 36);
@@ -161,7 +162,6 @@ main .main-info .main-wrapper-info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 120px;
 }
 @media (max-width: 1040px) {
   main .main-info .main-wrapper-info {
@@ -196,7 +196,11 @@ main .main-info .main-wrapper-info .info4 p {
 }
 main .main-give {
   background: rgb(249, 249, 249);
-  padding: 100px 0 100px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 485px;
+  margin-bottom: 120px;
 }
 main .main-give .main-container {
   max-width: 1231px;
@@ -208,6 +212,11 @@ main .main-give .main-container .main-text-curs {
   font-size: 50px;
   font-weight: 600;
   line-height: 160%;
+}
+@media (max-width: 745px) {
+  main .main-give .main-container .main-text-curs {
+    text-align: center;
+  }
 }
 @media (max-width: 839px) {
   main .main-give .main-container .main-text-curs {
@@ -263,7 +272,7 @@ main .main-give .main-container .main-wrapper-given p {
 }
 main .grid-proffi h5 {
   text-align: center;
-  padding: 120px 0px 60px 0px;
+  margin-bottom: 60px;
   color: rgb(20, 16, 36);
   font-size: 50px;
   font-weight: 600;
@@ -310,8 +319,10 @@ main .grid-proffi .grid-wrapper {
     transform: scale(0.9);
   }
 }
+main .grid-proffi .grid-wrapper img {
+  margin-bottom: 20px;
+}
 main .grid-proffi .grid-wrapper h6 {
-  padding-top: 20px;
   color: rgb(20, 16, 36);
   font-size: 24px;
   font-weight: 600;
