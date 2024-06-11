@@ -133,31 +133,22 @@ main {
       }
     }
     .grid-wrapper {
+      padding: 0 20px;
       margin-bottom: 220px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      @media (max-width: 1700px) {
-        justify-content: center;
-        .grid2,
-        .grid3,
-        .grid4 {
-          margin-left: 20px;
-        }
-        .grid1,
-        .grid2,
-        .grid3,
-        .grid4 {
-          margin-bottom: 20px;
-        }
+      display: grid;
+      gap: 2%;
+      grid-template-columns: repeat(4, 1fr);
+      @media (max-width: 720px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
       }
-      @media (max-width: 394px) {
-        .grid1,
-        .grid2,
-        .grid3,
-        .grid4,
-        .grid5 {
-          transform: scale(0.9);
+      .grid1,
+      .grid2,
+      .grid3,
+      .grid4 {
+        img {
+          width: 100%;
+          height: auto;
         }
       }
       img {
@@ -198,9 +189,27 @@ main {
     .packet-grid {
       text-align: center;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-      grid-template-rows: repeat(1, 640px);
+      gap: 2%;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       place-items: center;
+      @media (max-width: 750px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+      }
+      .p-grid1,
+      .p-grid2,
+      .p-grid3 {
+        width: 100%;
+        height: auto;
+        max-width: calc(100% - 4%);
+      }
+      @media (max-width: 367px) {
+        .p-grid1,
+        .p-grid2,
+        .p-grid3 {
+          transform: scale(0.9);
+        }
+      }
       h2 {
         padding-top: 40px;
         color: $textcolor;
@@ -238,9 +247,6 @@ main {
         height: 500px;
         border-radius: 20px;
         background: $textcolor;
-        @media (max-width: 374px) {
-          transform: scale(0.9);
-        }
         h2 {
           padding-top: 40px;
           color: white;
@@ -272,21 +278,12 @@ main {
         @media (max-width: 734px) {
           margin-bottom: 60px;
         }
-        @media (max-width: 374px) {
-          transform: scale(0.9);
-        }
       }
       .p-grid3 {
         width: 360px;
         height: 460px;
         border: 1px solid rgba(20, 16, 36, 0.2);
         border-radius: 20px;
-        @media (max-width: 1094px) {
-          margin-bottom: 60px;
-        }
-        @media (max-width: 374px) {
-          transform: scale(0.9);
-        }
       }
     }
   }

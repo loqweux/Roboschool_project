@@ -289,35 +289,24 @@ main .grid-proffi h5 {
   }
 }
 main .grid-proffi .grid-wrapper {
+  padding: 0 20px;
   margin-bottom: 220px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 2%;
+  grid-template-columns: repeat(4, 1fr);
 }
-@media (max-width: 1700px) {
+@media (max-width: 720px) {
   main .grid-proffi .grid-wrapper {
-    justify-content: center;
-  }
-  main .grid-proffi .grid-wrapper .grid2,
-  main .grid-proffi .grid-wrapper .grid3,
-  main .grid-proffi .grid-wrapper .grid4 {
-    margin-left: 20px;
-  }
-  main .grid-proffi .grid-wrapper .grid1,
-  main .grid-proffi .grid-wrapper .grid2,
-  main .grid-proffi .grid-wrapper .grid3,
-  main .grid-proffi .grid-wrapper .grid4 {
-    margin-bottom: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
   }
 }
-@media (max-width: 394px) {
-  main .grid-proffi .grid-wrapper .grid1,
-  main .grid-proffi .grid-wrapper .grid2,
-  main .grid-proffi .grid-wrapper .grid3,
-  main .grid-proffi .grid-wrapper .grid4,
-  main .grid-proffi .grid-wrapper .grid5 {
-    transform: scale(0.9);
-  }
+main .grid-proffi .grid-wrapper .grid1 img,
+main .grid-proffi .grid-wrapper .grid2 img,
+main .grid-proffi .grid-wrapper .grid3 img,
+main .grid-proffi .grid-wrapper .grid4 img {
+  width: 100%;
+  height: auto;
 }
 main .grid-proffi .grid-wrapper img {
   margin-bottom: 20px;
@@ -356,9 +345,29 @@ main .main-packet h1 {
 main .main-packet .packet-grid {
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  grid-template-rows: repeat(1, 640px);
+  gap: 2%;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   place-items: center;
+}
+@media (max-width: 750px) {
+  main .main-packet .packet-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+main .main-packet .packet-grid .p-grid1,
+main .main-packet .packet-grid .p-grid2,
+main .main-packet .packet-grid .p-grid3 {
+  width: 100%;
+  height: auto;
+  max-width: 96%;
+}
+@media (max-width: 367px) {
+  main .main-packet .packet-grid .p-grid1,
+  main .main-packet .packet-grid .p-grid2,
+  main .main-packet .packet-grid .p-grid3 {
+    transform: scale(0.9);
+  }
 }
 main .main-packet .packet-grid h2 {
   padding-top: 40px;
@@ -398,11 +407,6 @@ main .main-packet .packet-grid .p-grid1 {
   border-radius: 20px;
   background: rgb(20, 16, 36);
 }
-@media (max-width: 374px) {
-  main .main-packet .packet-grid .p-grid1 {
-    transform: scale(0.9);
-  }
-}
 main .main-packet .packet-grid .p-grid1 h2 {
   padding-top: 40px;
   color: white;
@@ -436,26 +440,11 @@ main .main-packet .packet-grid .p-grid2 {
     margin-bottom: 60px;
   }
 }
-@media (max-width: 374px) {
-  main .main-packet .packet-grid .p-grid2 {
-    transform: scale(0.9);
-  }
-}
 main .main-packet .packet-grid .p-grid3 {
   width: 360px;
   height: 460px;
   border: 1px solid rgba(20, 16, 36, 0.2);
   border-radius: 20px;
-}
-@media (max-width: 1094px) {
-  main .main-packet .packet-grid .p-grid3 {
-    margin-bottom: 60px;
-  }
-}
-@media (max-width: 374px) {
-  main .main-packet .packet-grid .p-grid3 {
-    transform: scale(0.9);
-  }
 }
 
 footer {
